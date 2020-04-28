@@ -1,0 +1,809 @@
+html, body{
+    margin: 0;   /* Adjust margin of website-----*/
+    padding:0;   /* Adjusts padding of website-----*/
+    font-family: "Nexa Book", sans-serif;   /* Changes font of website-----*/
+    background-color: #e9e9e9;   /* Changes background of site-----*/
+    box-sizing: border-box;   /* Padding + borders included with width and height of element-----*/
+    min-width: 1903px;   /* Sets minimum width of site-----*/
+    height: 100%;   /* Sets height of site-----*/
+}
+
+.footer-container{
+    min-height: 100%;   /* Sets minimum height of container-----*/
+}
+
+.footer-main{
+    overflow: auto;   /* Adds scroll bar to the rest of content-----*/
+    padding-bottom: 50px;   /* Adjusts the padding of bottom-----*/
+}
+
+footer{
+    background-color: #000;   /* Changes background color of footer-----*/
+    position: relative;   /* Sets footer position to relative-----*/
+    height: 70px;   /* Adjusts height of footer-----*/
+    margin-top: -30px;   /* Adjusts top margin of footer-----*/
+    font-size: 15pt;   /* Adjusts font size of footer-----*/
+    text-align: center;   /* Aligns text to center of footer-----*/
+    padding-top: 40px;   /* Adjusts top padding of footer-----*/
+}
+
+footer a{
+    text-decoration: none;   /* Removes text decoration from footer text-----*/
+    color: #FFFFFF;   /* Changes color of text in footer-----*/
+}
+
+footer a:hover{
+    color: #EF2D2D;   /* Changes color of footer text when hovering-----*/
+}
+
+/* Navigation Bar CSS-----------*/
+
+.main-nav, .drop-nav{
+    list-style: none;   /* Removes bulletpoints from text-----*/
+    margin: 0;   /* Removes margins-----*/
+    padding: 0;   /* Remove padding-----*/
+    font-size: 20px;   /* Adjusts font size of text-----*/
+}
+
+.nav-container{
+    width: 80%;   /* Changes the width of nav container-----*/
+    margin: 0 auto;   /* Adjusts the margin of nav container-----*/
+}
+
+header{
+    background-color: #FFFFFF;   /* Changes backgorund color of header-----*/
+    position: relative;   /* Adjusts position of header-----*/
+    z-index: 100;   /* Changes importance of header (Higher = more important)-----*/
+}
+
+.logo{
+    float: left;   /* Floats logo to the left-----*/
+    width: 200px;   /* Adjusts the width of logo-----*/
+    height: 45px;   /* Adjusts the height of logo-----*/
+    padding: 5px 0;   /* Adjusts the padding of logo-----*/   
+}
+
+nav{
+    float: right;   /* Floats nav to the right-----*/
+}
+
+header::after{
+    content: "";   /* Adds empty content-----*/
+    display: table;   /* Displays header as table-----*/
+    clear: both;   /* Removes float items from left and right-----*/
+}
+
+.dropdown, .nav-container li{
+    display: inline-block;   /* Displays dropdown and nav container as inline block-----*/
+    margin-left: 150px;   /* Adjusts left margin of nave container and dropdown-----*/
+    padding-top: 15px;   /* Adjusts top padding of dropdown and nav container-----*/
+    position: relative;   /* -----*/
+}
+
+.drop-nav li{
+    margin-left: 0%;   /* Sets left margin to none for drop nav-----*/
+    padding-top: 10px;   /* Adjusts top padding of drop nav-----*/
+    border-bottom: 1px solid #000000;   /* Adds colored border to bottom of drop nav-----*/
+    width: 100%;   /* Adjusts width of drop nav-----*/
+}
+
+.drop-nav li:hover{
+    color: #FFFFFF;   /* Changes color of text when hovering-----*/
+}
+
+.drop-nav a:hover{
+    color: #EF2D2D;   /* Adjusts color of text when hovering-----*/
+}
+
+.drop-nav{
+    position: absolute;   /* Changes position of drop nav to absolute-----*/
+    display: none;   /* Displays nothing-----*/
+    background-color: #FFFFFF;   /* Changes background color of drop nav-----*/
+    box-shadow: 3px 3px 3px #000000;   /* Adds a box shadow to drop nav-----*/
+}
+
+.main-nav a{
+    color: #000000;   /* Changes the color of text-----*/
+    text-decoration: none;   /* Removes text decoration-----*/
+    text-transform: uppercase;   /* Changes the text to uppercase-----*/
+}
+
+.main-content::before{
+    content: "";   /* Adds empty content-----*/
+    display: block;   /* Changes the display to block-----*/
+    height: 5px;   /* Changes the height of main content-----*/
+    width: 100%;   /* Changes the width of main content-----*/
+    background-color: #EF2D2D;   /* Changes the background color of main content-----*/
+    
+    position: absolute;   /* Changes the position to absolute-----*/
+    top: 0;   /* Adjusts position from top to none-----*/
+    width: 0%;   /* Adjusts width to none-----*/
+        
+    transition: all ease-in-out 250ms;   /* Adds a transition animation-----*/
+}
+
+.main-content:hover::before{
+   width: 100%;   /* Adjusts width of main content-----*/
+}
+
+.dropdown::after{
+    content: "\25BC";   /* Adds dropdwon symbol-----*/
+    font-size: .5em;   /* Adjusts size of dropdown symbol-----*/
+    display: block;   /* Display dropdown symbol as block-----*/
+    position: absolute;   /* -----*/
+    bottom: 5%;   /* Adjusts position from bottom-----*/
+    left: 103%;   /* Adjust position from left-----*/
+}
+
+.dropdown:hover > .drop-nav{
+    display: block;   /* Displays dropdown as block upon hovering-----*/
+}
+
+.dropdown{
+    z-index: 100;   /* Changes importance of dropdown (Higher = more important)-----*/
+}
+
+/* Home Page CSS----------*/
+
+.home-container{
+    display: block;   /* Changes the display to block of home container-----*/
+}
+
+.home-text{
+    display: block;   /* Changes the display to block of home text-----*/
+    font-size: 27pt;   /* Changes the font size-----*/
+    padding-top: 6%;   /* Adjusts the top padding of home text-----*/
+    width: 980px;   /* Adjusts the width of home text-----*/
+    padding-left: 3%;   /* Adjusts the left padding-----*/
+    padding-right: 3.5%;   /* Adjusts the right padding-----*/
+    margin-top: 10px;   /* Adjusts top margin-----*/
+    padding-bottom: 130px;   /* Adjusts bottom padding-----*/
+    border-right: solid 1px #EF2D2D;   /* Adds a colored right border of home text-----*/
+    color: #EF2D2D;   /* Changes the color of text-----*/
+    text-shadow: 2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000, 1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;   /* Adds black outline on text-----*/
+}
+
+.home-image{
+    display: block;   /* Displays the home image as block-----*/
+    height: 400px;   /* Adjusts the height of home image-----*/
+    width: 700px;   /* Adjusts width of home image-----*/
+    position: relative;   /* Changes the poisiton of home image to relative-----*/
+    left: 581px;   /* Adjusts position from left-----*/
+    bottom: 215px;   /* Adjusts position from bottom-----*/
+    margin-top: 10px;   /* Adjusts top margin of home image-----*/
+    border-radius: 20px;   /* Adjusts border radius of image-----*/
+}
+
+.intro-tab{
+    display: block;    /* Changes the display of intro tab to block-----*/
+    width: 100%;   /* Adjusts the width of intro tab-----*/
+    height: 435px;   /* Adjusts height of intro tab-----*/
+    border-bottom: 1px solid;   /* Adds colored border to bottom-----*/
+}
+
+.apps-text{
+    text-align: center;   /* Aligns texts to center-----*/
+    font-size: 30pt;   /* Changes font size-----*/
+    font-family: "Arial" , sans-serif;   /* Changes the font family-----*/
+    text-decoration: underline;   /* Adds underline to the text-----*/
+}
+
+.home-apps{
+    width: 600px;   /* Adjusts width of home apps-----*/
+    margin-left: 55px;   /* Adjusts left margin of home apps-----*/   
+}
+
+.home-instagram, .home-twitter, .home-messenger, .home-slack, .home-snapchat{
+    width: 700px;   /* Adjusts width-----*/
+    padding-top: 25px;   /* Adjusts the top padding-----*/
+}
+
+.home-instagram p, .home-twitter p, .home-messenger p, .home-slack p, .home-snapchat p{
+    font-size: 22pt;   /* Changes the font size-----*/
+    color: #000000;   /* Changes the color of text-----*/
+}
+
+.home-instagram a, .home-twitter a, .home-messenger a, .home-slack a, .home-snapchat a{
+    text-decoration: none;   /* Removes text decoration-----*/
+}
+
+.home-instagram p:hover , .home-twitter p:hover , .home-messenger p:hover , .home-slack p:hover , .home-snapchat p:hover{
+    color: #EF2D2D;   /* Changes the text color upon hovering-----*/
+}
+
+.home-instagram, .home-twitter{
+    float: right;   /* Floats divs to the right-----*/
+}
+
+.home-messenger, .home-snapchat, .home-slack{
+    padding-left: 4%;   /* Adjusts left padding-----*/
+    padding-right: 9.2%;   /* Adjusts right padding-----*/
+    border-right: 1px solid;   /* Adds colored border to the right-----*/
+}
+
+.home-instagram, .home-twitter{
+    padding-right: 4%;   /* Adjusts right padding-----*/
+    padding-left: 9.2%;   /* Adjusts left padding-----*/
+    border-left: 1px solid;   /* Adds colored border to the left-----*/
+}
+
+/* Site Map CSS----------*/
+
+.site-map-container{
+    padding-left: 40%;   /* Adjusts the left padding-----*/
+    font-size: 40pt;   /* Changes the font size-----*/
+}
+
+.site-map-container h1{
+    color: #EF2D2D;   /* Changes the text color-----*/
+    text-shadow: 3px 0 0 #000, -3px 0 0 #000, 0 3px 0 #000, 0 -3px 0 #000, 2px 2px #000, -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000;   /* Adds black outline to text-----*/
+}
+
+.site-map-container a{
+    text-decoration: none;   /* Removes text decoration-----*/
+    color: #000;   /* Changes the text color-----*/
+}
+
+.main-headings{
+    font-size: 30pt;   /* Changes the font size of main headings-----*/
+    list-style: none;   /* Removes bullet points from main headings-----*/
+}
+
+.main-headings li::before{
+    content: "\2013";   /* Adds a dash as the bullet points-----*/
+    margin-right: 5px;   /* Adjusts the right margin of bullet point-----*/
+}
+
+.sub-headings{
+    font-size: 25pt;   /* Changes the font size of sub headings-----*/
+    list-style: none;   /* Removes bullet points from sub headings-----*/
+}
+
+.main-headings a:hover{
+    color: #EF2D2D;   /* Changes the color of text upon hovering-----*/ 
+}
+
+/* Apps Page CSS----------*/
+
+.apps-container{
+    display: grid;   /* Changes the display of apps container to grid-----*/
+    grid-template-rows: 1fr 1fr 1fr;   /* Adds rows to the grid-----*/
+    grid-template-columns: 4fr 1fr 4fr;   /* Adds columns to the grid-----*/
+}
+
+.apps-apps{
+    width: 700px;   /* Adjusts the width of the app images-----*/
+}
+
+.apps-instagram, .apps-twitter, .apps-messenger, .apps-slack, .apps-snapchat{
+    display: block;   /* Changes the display to block of apps-----*/
+    text-align: center;   /* Aligns text to center-----*/
+    font-size: 25pt;   /* Changes the font size-----*/
+    border: 3px solid;   /* Adds a black border-----*/
+    margin-top: 5%;   /* Adjusts top margin of images-----*/
+    border-radius: 150px;   /* Adjusts the border radius of app images-----*/
+}
+
+.apps-instagram a, .apps-twitter a, .apps-messenger a, .apps-slack a, .apps-snapchat a{
+    text-decoration: none;   /* Removes text decoration-----*/
+    color: #000000;   /* Changes color of text-----*/
+}
+
+.apps-snapchat{
+    grid-row-start: 2;   /* Start the div on the numbered grid row position-----*/
+    grid-column-start: 3;   /* Start the div on the numbered grid column position-----*/
+}
+
+.apps-messenger{
+    grid-row-start: 3;   /* Start the div on the numbered grid row position-----*/
+    grid-column-start: 1;   /* Start the div on the numbered grid column position-----*/
+}
+
+.apps-twitter{
+    grid-row-start: 2;   /* Start the div on the numbered grid row position-----*/
+    grid-column-start: 1;   /* Start the div on the numbered grid column position-----*/
+}
+
+.apps-slack{
+    grid-row-start: 1;   /* Start the div on the numbered grid row position-----*/
+    grid-column-start: 3;   /* Start the div on the numbered grid column position-----*/
+    padding-top: 30%;   /* Adjusts top padding-----*/
+}
+
+.apps-slack p{
+   margin-top: 22%;   /* Adjusts top margin-----*/ 
+}
+
+.apps-instagram p, .apps-twitter p, .apps-slack p, .apps-snapchat p, .apps-messenger p{
+    border-top: 3px solid #EF2D2D;    /* Adds colored border to the top-----*/
+    margin-left: 50px;   /* Adjusts left margin-----*/
+    margin-right: 50px;   /* Adjusts right margin-----*/
+    padding-top: 10px;   /* Adjusts top padding-----*/
+}
+
+.apps-instagram, .apps-slack{
+    margin-top: 5%;   /* Adjusts top margin-----*/
+}
+
+.apps-instagram, .apps-twitter, .apps-messenger{
+    margin-left: 5%;   /* Adjusts left margin-----*/
+}
+
+.apps-slack, .apps-snapchat{
+    margin-right: 5%;   /* Adjusts right margin-----*/
+}
+
+.apps-instagram:hover , .apps-twitter:hover , .apps-messenger:hover , .apps-slack:hover , .apps-snapchat:hover{
+    border-color: #EF2D2D;   /* Adjusts border color upon hovering-----*/
+}
+
+.apps-instagram p:hover , .apps-twitter p:hover , .apps-messenger p:hover , .apps-slack p:hover , .apps-snapchat p:hover{
+    text-decoration: underline;   /* Adds underline to text upon hovering-----*/
+    text-decoration-color: #EF2D2D;   /* Changes color of underline upon hovering-----*/
+}
+
+/* Seperate App Pages CSS------------*/
+
+.insta-page img{
+    width: 600px;   /* Adjusts the width of the img-----*/
+}
+
+.slack-page img{
+    width: 600px;   /* Adjusts the width of the img-----*/
+    margin-top: 40%;   /* Adjusts top margin-----*/
+}
+
+.insta-page{
+    width: 601px;   /* Adjusts the width-----*/
+    text-align: center;   /* Aligns the text to center-----*/
+    padding-right: 15px;   /* Adjusts right padding-----*/
+    border-right: 2px solid;   /* Adds black border to right-----*/
+    height: 680px;   /* Adjusts height-----*/
+}
+
+.insta-page h2{
+    margin: 0;   /* Removes margin-----*/
+    font-size: 30pt;   /* Changes font size-----*/
+    margin-bottom: 20px;   /* Adjusts bottom margin-----*/
+}
+
+.intro{
+    position: relative;   /* Changes position to relative-----*/
+    width: 1200px;   /* Adjusts the width-----*/
+    font-size: 35pt;   /* Changes the font size-----*/
+    left: 650px;   /* Adjusts position from the left-----*/
+    bottom: 600px;   /* Adjusts the position from the right-----*/
+}
+
+.slack-page{
+    width: 601px;   /* Adjusts the width-----*/
+    text-align: center;   /* Aligns the text to center-----*/
+    padding-right: 15px;   /* Adjusts the right padding-----*/
+    border-right: 2px solid;   /* Adds black border to right-----*/
+    height: 680px;   /* Adjusts the height-----*/
+}
+
+.slack-page h2{
+    margin: 0;   /* Removes margin-----*/
+    font-size: 30pt;   /* Changes the font size-----*/
+    margin-top: 130px;   /* Adjusts top margin-----*/
+}
+
+.app-page-logo{
+    margin-top: 30px;   /* Adjusts top margin-----*/
+    padding-top: 20px;   /* Adjusts top padding-----*/
+    border-top: 2px solid;   /* Adds black border to top-----*/
+    border-bottom: 2px solid #EF2D2D;   /* Adds colored border to bottom-----*/
+    height: 700px;   /* Adjusts the height-----*/
+}
+
+.registration{
+    display: grid;   /* Displays the div as a grid-----*/
+    grid-template-columns: 1fr 1fr 1fr;   /* Adds columns to the grid-----*/
+    border-bottom: 2px solid #EF2D2D;    /* Adds colored border to bottom-----*/
+}
+
+.registration-snapchat{
+    display: grid;   /* Displays the div as a grid-----*/
+    grid-template-columns: 1fr 1fr 1fr;   /* Adds columns to the grid-----*/
+    grid-template-rows: 1fr 1fr;   /* Adds rows to the grid-----*/
+    border-bottom: 2px solid #EF2D2D;   /* Adds colored border to bottom-----*/
+}
+
+.app-container2 h3{
+    text-align: center;   /* Aligns text to center-----*/
+    font-size: 30pt;   /* Changes the font size-----*/
+}
+
+.app-container2 h4{
+    text-align: center;   /* Aligns the text to center-----*/
+    font-size: 30pt;   /* Changes the font size-----*/
+}
+
+.register-images{
+    width: 400px;   /* Adjusts the image width-----*/
+    height: 650px;   /* Adjusts the image height-----*/  
+    margin-left: 110px;   /* Adjusts left margin-----*/
+}
+
+.register-images-twitter{
+    width: 600px;   /* Adjusts the image width-----*/
+    height: 420px;   /* Adjusts the image height-----*/
+}
+
+.register-images-snap{
+    width: 400px;   /* Adjusts the image width-----*/
+    height: 800px;   /* Adjusts the image height-----*/
+    margin-left: 100px;   /* Adjusts the left margin-----*/
+}
+
+.register-images-messenger{
+    width: 600px;   /* Adjusts the width of image-----*/
+    height: 470px;   /* Adjusts the height of image-----*/
+}
+
+.register-images-slack{
+    width: 600px;   /* Adjusts the width of image-----*/
+}
+
+.step-one, .step-two{
+    font-size: 20pt;   /* Changes the font size-----*/
+    padding-left: 10px;   /* Adjusts the left padding-----*/
+    margin-left: 10px;   /* Adjusts the left margin-----*/
+    border-right: 2px solid #EF2D2D;   /* Adds colored border to right-----*/
+}
+
+.step-three{
+    font-size: 20pt;   /* Changes the font size-----*/
+    padding-left: 10px;   /* Adjusts the left padding-----*/
+    margin-left: 10px;   /* Adjusts the left margin-----*/
+}
+
+.snap-step-one, .snap-step-two{
+    font-size: 20pt;   /* Changes the font size-----*/
+    padding-left: 10px;   /* Adjusts left padding-----*/
+    padding-right: 10px;   /* Adjusts right padding-----*/
+    border-right: 2px solid #EF2D2D;   /* Adds colored border to right-----*/
+    border-bottom: 2px solid #EF2D2D;   /* Adds colored border to bottom-----*/
+}
+
+.snap-step-three{
+    font-size: 20pt;   /* Changes the font size-----*/
+    padding-left: 10px;   /* Adjusts the left padding-----*/
+    padding-right: 10px;   /* Adjusts the right padding-----*/
+    border-bottom: 2px solid #EF2D2D;   /* Adds colored border to bottom-----*/
+}
+
+.snap-step-four, .snap-step-five{
+    font-size: 20pt;   /* Changes the font size-----*/
+    padding-left: 10px;   /* Adjusts left padding-----*/
+    padding-right: 10px;   /* Adjusts right padding-----*/
+    padding-top: 10px;   /* Adjusts top padding-----*/
+    border-right: 2px solid #EF2D2D;   /* Adds colored border to the right-----*/
+}
+
+.snap-step-six{
+    font-size: 20pt;   /* Changes the font size-----*/
+    padding-left: 10px;   /* Adjusts the left padding-----*/
+    padding-right: 10px;   /* Adjusts the right padding-----*/
+    padding-top: 10px;   /* Adjusts the top padding-----*/
+}
+
+.enrol-use h4{
+    text-align: center;   /* Aligns the text to center-----*/
+    font-size: 30pt;   /* Changes the font size-----*/
+}
+
+.enrol-images{
+    width: 450px;   /* Adjusts the width-----*/
+    height: 300px;   /* Adjusts the height-----*/
+}
+
+.enrol-step-one, .enrol-step-two, .enrol-step-three{
+   font-size: 20pt;   /* Changes the font size-----*/
+   padding-left: 10px;   /* Adjusts the left padding-----*/
+   border-right: 2px solid #EF2D2D;   /* Adds colored border to the right-----*/  
+}
+
+.enrol-step-four{
+    margin-left: 10px;   /* Adjusts the left margin-----*/
+    font-size: 20pt;   /* Changes the font size-----*/
+}
+
+.enrol-use iframe{
+    margin-left: 18%;   /* Adjusts the left margin-----*/
+}
+
+.enrol-use{
+    padding-bottom: 20px;   /* Adjusts the bottom padding-----*/
+    border-bottom: 2px solid #EF2D2D;   /* Adds colored border to the bottom-----*/
+}
+
+.enrol-use-pictures{
+    display: grid;   /* Changes the display to grid-----*/
+    grid-template-columns: 1fr 1fr 1fr 1fr;   /* Adds columns to the grids-----*/
+    border-bottom: 2px solid #EF2D2D;   /* Adds colored border top the bottom-----*/
+}
+
+.cautions p{
+    font-size: 20pt;   /* Changes the font size-----*/
+    margin-left: 5%;   /* Adjusts the left margin-----*/
+    margin-right: 5%;   /* Adjusts the right margin-----*/
+}
+
+.cautions{
+    padding-bottom: 5px;   /* Adjusts the bottom padding-----*/
+    border-bottom: 2px solid #EF2D2D;   /* Adds colored border to the bottom-----*/
+}
+
+.app-uses h4{
+    text-align: center;   /* Aligns text to the center-----*/
+    font-size: 30pt;   /* Changes the font size-----*/
+}
+
+.use-list{
+    margin-left: 10%;   /* Adjusts the left margin-----*/
+    margin-right: 10%;   /* Adjusts the right margin-----*/
+    font-size: 20pt;   /* Changes the font size-----*/
+}
+
+/* About Us Page CSS----------*/
+
+#about-us-info{
+    text-align: center;   /* Aligns the text to the center-----*/
+    margin-left: 20%;   /* Adjusts the left margin-----*/
+    margin-right: 20%;   /* Adjusts the right margin-----*/
+    padding-top: 1%;   /* Adjusts top padding-----*/
+    border-bottom: 2px solid #EF2D2D;   /* Adds colored border to the bottom-----*/
+}
+
+#about-us-info h1{
+    font-size: 60pt;   /* Changes the font size-----*/
+    color: #EF2D2D;   /* Changes the color of the text-----*/
+    text-shadow: 3px 0 0 #000, -3px 0 0 #000, 0 3px 0 #000, 0 -3px 0 #000, 2px 2px #000, -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000;   /* Adds black outline to text-----*/
+    padding-bottom: 25px;   /* Adjusts the bottom padding-----*/
+    margin: 0;   /* Removes margin-----*/
+    border-bottom: 2px solid #EF2D2D;   /* Adds colored border to the bottom-----*/
+}
+
+#about-us-info p{
+    font-size: 30pt;   /* Changes the font size-----*/
+    padding-bottom: 15px;   /* Adjusts the bottom padding-----*/
+}
+
+#about-us-info2 h2{
+    font-size: 40pt;   /* Changes the font size-----*/
+    color: #EF2D2D;   /* Changes the text color-----*/
+    text-shadow: 2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000, 1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;   /* Adds black outline to text-----*/
+    border-bottom: 2px solid #EF2D2D;   /* Adds colored border to the bottom-----*/
+    margin: 0;   /* Removes margin-----*/
+    padding-bottom: 25px;   /* Adjusts bottom padding-----*/
+    margin-top: 1%;   /* Adjusts top padding-----*/
+}
+
+#about-us-info2{
+    text-align: center;   /* Aligns text to the center-----*/
+    margin-left: 20%;   /* Adjusts the left margin-----*/
+    margin-right: 20%;   /* Adjusts right margin-----*/
+    padding-top: 1%;   /* Adjusts the top padding-----*/
+}
+
+#about-us-info2 p{
+    font-size: 30pt;   /* Changes the font size-----*/
+    padding-bottom: 15px;   /* Adjusts the bottom padding-----*/
+}
+
+/* Resources Page CSS----------*/
+
+.resources-container h1{
+    text-align: center;   /* Aligns text to the center-----*/
+    font-size: 60pt;   /* Changes the font size-----*/
+}
+
+.resources-container p{
+    font-size: 30pt;   /* Changes the font size-----*/
+    text-align: center;   /* Aligns the text to center-----*/
+}
+
+.resources-container a{
+    text-decoration-color: #EF2D2D;   /* Changes color of the text decoration-----*/
+    color: #EF2D2D;   /* Changes color of text-----*/
+}
+
+/* News Page CSS----------*/
+
+.news-grid{
+    display: grid;   /* Changes the display to grid-----*/
+    grid-template-columns: 1fr 1fr;   /* Adds columns to grid-----*/
+    grid-template-rows: 1fr 1fr;   /* Adds rows to grid-----*/
+    grid-gap: 20px;   /* Adds a gap to the grid columns and rows-----*/  
+}
+
+.news-container h1{
+    font-size: 60pt;   /* Changes the font size-----*/
+    text-align: center;   /* Aligns the text to center-----*/
+}
+
+.news-tab1, .news-tab3{
+    width: 700px;   /* Adjusts the width-----*/
+    font-size: 20pt;   /* Changes the font size-----*/
+    margin-left: 20px;   /* Adjusts the left margin-----*/
+    padding-left: 100px;   /* Adjusts the left padding-----*/
+    padding-right: 120px;   /* Adjusts the right padding-----*/
+    margin-top: 20px;   /* Adjusts the top margin-----*/
+    border-right: 2px solid #EF2D2D;   /* Adds colored border to the right-----*/
+}
+
+.news-tab2, .news-tab4{
+    width: 700px;   /* Adjusts the width-----*/
+    font-size: 20pt;   /* Changes the font size-----*/
+    padding-left: 120px;   /* Adjusts the left padding-----*/
+}
+
+.news-tab1 p, .news-tab2 p, .news-tab3 p, .news-tab4 p{
+    margin-top: 0;   /* Removes top margin-----*/
+    color: #000000;   /* Changes the color of the text-----*/
+    text-align: center;   /* Aligns the text to the center-----*/
+}
+.news-tab1 p:hover , .news-tab2 p:hover , .news-tab3 p:hover , .news-tab4 p:hover{
+    color: #EF2D2D;   /* Changes the color of the text-----*/
+}
+
+.news-tab1 a, .news-tab2 a, .news-tab3 a, .news-tab4 a{
+    text-decoration: none;   /* Removes any text decoration-----*/
+}
+
+.image-news{
+    width: 700px;   /* Adjusts the width-----*/
+    height: 450px;   /* Adjusts the height-----*/
+    border-radius: 50px;   /* Adds a radius to the border-----*/
+}
+
+/* Contact Us Page CSS----------*/
+
+.contact-info{
+    text-align: center;   /* Aligns the text to center-----*/
+    display: block;   /* Changes the display to block-----*/
+    margin-left: 25%;   /* Adjusts the left margin-----*/
+    margin-right: 25%;   /* Adjusts the right margin-----*/
+}
+
+.contact-info h1{
+    font-size: 72pt;   /* Changes the font size-----*/
+    color: #EF2D2D;   /* Changes the color of the text-----*/
+    text-shadow: 3px 0 0 #000, -3px 0 0 #000, 0 3px 0 #000, 0 -3px 0 #000, 2px 2px #000, -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000;   /* Adds black outline to text-----*/
+    margin: 0;   /* Removes margin-----*/
+    margin-top: 2%;   /* Adjusts the top margin-----*/
+    padding-bottom: 10px;   /* Adjusts the bottom padding-----*/
+    border-bottom: 2px solid #EF2D2D;   /* Adds a colored border to the bottom-----*/
+}
+
+.contact-info-text{
+    padding-top: 10px;   /* Adjusts the top padding-----*/
+    font-size: 40pt;   /* Changes the font size-----*/
+    margin: 0;   /* Removes margin-----*/
+    padding-bottom: 30px;   /* Adjusts the bottom padding-----*/
+    padding-top: 30px;   /* Adjusts the top padding-----*/
+    border-bottom: 2px solid #EF2D2D;   /* Adds a colored border to the bottom-----*/
+}
+
+.contact-tel, .contact-email{
+    margin: 0;   /* Removes margin-----*/
+    font-size: 40pt;   /* Changes the font size-----*/
+}
+
+.contact-tel{
+    margin-top: 30px;   /* Adjusts the top margin-----*/
+}
+
+.contact-email{
+    margin-top: 20px;   /* Adjusts the top margin-----*/
+    padding-bottom: 30px;   /* Adjusts the bottom margin-----*/
+    border-bottom: 2px solid #EF2D2D;   /* Adds a colored border to the bottom-----*/
+}
+
+/* Contact Form CSS----------*/
+
+.box{
+    width: 650px;    /* Adjusts main box width-----*/
+    height: 820px;    /* Adjusts main box height-----*/
+    position: absolute;    /* Changes box position to absolute-----*/
+    top: 50%;   /* Adjusts position of box away from top-----*/
+    left: 50%;   /* Adjusts position of box away from left-----*/
+    transform: translate(-50%,-50%);   /* Moves position of box from previous location-----*/
+    background-color: #FFFFFF;   /* Changes color of box-----*/
+    font-size: 20px;   /* Changes font size inside box-----*/
+    text-align: center;   /* Aligns text inside box-----*/
+    border: 10px solid #EF2D2D;   /*Applies colored border to box-----*/
+    border-radius: 10px;   /* Applies curved edge to box border-----*/
+    box-shadow: 5px 5px 5px #000000;
+}
+
+.box h1{
+    text-transform: uppercase;   /* Changes H1 text to uppercase-----*/   
+}
+
+.box input[type = "text"]{
+    display: block;  /* Displays text inputs as blocks-----*/
+    margin: 1px auto;   /* Adds margins to text inputs-----*/
+    border: 2px solid #000000;   /* Add custom border of color to text inputs-----*/  
+    padding: 4px 5px;   /* Adds padding to text inputs-----*/
+    width: 280px;   /* Adjusts width of text inputs-----*/
+    outline: none;   /* Removes outline from text inputs-----*/
+    border-radius: 24px;   /* Adjusts border radius of text inputs-----*/
+    transition: 0.25s;   /* Changes duration of property value change-----*/ 
+}
+
+.box input[type = "text"]:focus , .box input[type = "text"]:hover{
+    width: 360px;   /* Adjusts width of text input upon :hover/:focus-----*/
+    border-color: #EF2D2D;   /* Changes color of border of text inout upon :hover/:focus-----*/
+}
+
+.box input[type = "submit"]{
+    display: block;   /* Displays submit button as block-----*/
+    margin: 1px auto;   /* Adds margin to submit button-----*/
+    border: 2px solid #000000;   /* Adds colored border to submit button-----*/
+    padding: 5px 24px;   /* Adds padding to submit button-----*/
+    width: 100px;   /* Changes width of submit button-----*/            
+    outline: none;   /* Removes outline from text inputs-----*/
+    border-radius: 24px;   /* Changes border radius of submit button-----*/
+    transition: 0.25s;   /* Changes duration of property value change-----*/
+    text-transform: uppercase;   /* Transforms text to uppercase-----*/
+    font-weight: 500;   /* Changes font weight-----*/
+    cursor: pointer;   /* Changes cursor to pointer upon hover-----*/
+}
+
+.box input[type = "submit"]:hover{
+    background-color: #EF2D2D;   /* Changes color upon hover-----*/
+    border-color: #EF2D2D;   /* Changes border color upon hover-----*/
+    transition: 0.25s;   /* Changes duration of property value change-----*/
+}
+
+.box textarea{
+    border: 2px solid #000000;   /* Adds colored border-----*/
+    padding: 5px 10px;   /* Adds padding to text area-----*/
+    width:300px;   /* Adjusts width to text area-----*/
+    height: 100px;   /* Adjusts height to text area-----*/
+    border-radius: 10px;   /* Adds a radius to border of text area-----*/
+    resize: none;   /* Removes resize option on text area-----*/
+}
+
+.box textarea:focus , .box textarea:hover{
+    border-color: #EF2D2D;   /* Changes border color upon :hover/:focus-----*/
+}
+
+.red-bottom{
+    border-bottom: 2px solid #EF2D2D;   /* Adds colored border to bottom of div-----*/
+    margin: 30px   /* Adjusts margin of div-----*/
+}
+
+.box select, .box input[type = "radio"], .box textarea{
+    margin-top: 20px   /* Adjust top margin-----*/
+}
+
+.box select{
+    border: 2px solid #000000;   /* Adds colored border to select box-----*/
+    height: 30px;   /* Adjusts height of select box-----*/
+    cursor: pointer;   /* Changes cursor to pointer upon hover-----*/
+} 
+
+.box select:hover , .box select:focus{
+    border-color: #EF2D2D;   /* Changes border color upon :hover/:focus-----*/
+}
+
+.box input[type = "radio"]{
+    cursor: pointer;   /* Changes cursor to pointer upon hover-----*/
+    display: block;   /* Changes display of radio to block-----*/
+    margin-left: 40%;   /* Adjusts left margin of radio-----*/
+    margin-bottom: 5px;   /* Adjusts bottom margin of radio-----*/
+}
+
+.box label{
+    cursor: pointer;   /* Changes cursor to pointer upon hover-----*/
+    display: inline-block;   /* Changes display of label to inline block-----*/
+    margin: 10px   /* Changes margin of label-----*/
+}
+
+.box label:hover{
+    color: #EF2D2D;   /* Changes color of label upon hover-----*/
+}
